@@ -9,7 +9,7 @@ const Notfound = lazy(() => import("./Components/Notfound/Notfound"));
 export default function App() {
   const routes = createBrowserRouter([
     {
-      path: "",
+      index: true,
       element: (
         <Suspense fallback={<h1>Loading</h1>}>
           <Layout></Layout>
